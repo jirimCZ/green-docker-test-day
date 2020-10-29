@@ -9,8 +9,6 @@ from os import urandom
 import redis
 from flask import Flask, request, render_template
 
-#import sys
-#ys.path.append(".")
 import config
 
 
@@ -101,4 +99,3 @@ if __name__ == '__main__':
         host = '127.0.0.1'
 
     app.run(host=host, port=port, debug=config.DEBUG)
-    #app.run()
