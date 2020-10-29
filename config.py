@@ -1,6 +1,5 @@
 import os
 
-
 DEBUG = os.getenv('DEBUG', 'False').lower() in ("yes", "true", "t", "1")
 
 # Redis configuration

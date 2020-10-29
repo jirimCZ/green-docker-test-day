@@ -2,11 +2,17 @@ version: '3'
 services:
   main:
     build: .
-    restart: always
+    restart: "no"
     ports:
       - 5000:5000
     networks:
       - internal
+  redis:
+    image: "redis:alpine"
+    networks:
+      - internal
+    ports:
+      - 6379:6379
 #    depends_on:
 #      - redis
     environment:

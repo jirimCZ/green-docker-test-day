@@ -7,4 +7,3 @@ docker-data
 docker-compose.yml
 Dockerfile
 Makefile
-config.py
